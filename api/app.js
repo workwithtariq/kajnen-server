@@ -34,8 +34,10 @@ mongoose
 app.use('/api/auth', userRoutes);
 app.use('/api/jobs', jobRoutes);
 app.use('/api/categories', categoryRoutes);
-app.use("/", () => console.log("/ root api called"));
+app.use("/", (req, res) => res.send("Express on Vercel"));
 
 // Server
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Server is running on port ${PORT}`));
+
+module.exports = app
