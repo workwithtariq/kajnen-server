@@ -10,7 +10,7 @@ require("dotenv").config();
 // Use CORS middleware
 // app.use(cors()); // This will enable CORS for all routes and origins
 app.use(cors({
-  origin: ['http://example.com', 'http://localhost:3000'], // Replace with your allowed origins
+  origin: ['https://kajnen.vercel.app', 'http://localhost:3000'], // Replace with your allowed origins
   methods: ['GET', 'POST', 'PUT', 'DELETE'], // Allowed HTTP methods
   allowedHeaders: ['Content-Type', 'Authorization'] // Allowed headers
 }));
